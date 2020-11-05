@@ -34,7 +34,7 @@ def send_mail(file_name):
 
     part_attach1 = MIMEApplication(open(attach_file, 'rb').read())
     part_attach1.add_header('Content-Disposition', 'attachment',
-                            filename='{}_settour_TW_ShopBack_Report'.format(send_year + '-' + send_month) + str(date.today()) + '.xlsx')  # 為附件命名
+                            filename='{}_Report'.format(send_year + '-' + send_month) + str(date.today()) + '.xlsx')  # 為附件命名
 
     msg.attach(part_attach1)
 
